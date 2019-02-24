@@ -1,0 +1,27 @@
+.menu-root {
+
+  header {
+    background: #1A237E;
+    .menu-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      h5 {
+        margin-right: 20px;
+        font-size: 115%;
+        padding: 13px 0;
+      }
+      a {
+        font-weight: 300;
+        letter-spacing: .25px;
+        color:#d2d2d2;
+        cursor: pointer;
+        &.is-active {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+}

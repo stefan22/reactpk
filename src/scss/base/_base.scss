@@ -1,0 +1,50 @@
+@import './grid';
+@import './settings';
+@import './helpers';
+
+/*
+  base
+˚˚˚˚˚˚
+*/
+
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+  width:100%;
+  line-height: 1.5;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: 'Roboto:300,400,500', Helvetica, Arial, sans-serif;
+  margin:0;
+  font-size: $sm-size;
+  background: $light-white;
+  display: flex;
+  min-width:100%;
+}
+
+#root {
+  // display: flex;
+  // flex-flow: column;
+  // justify-content: space-evenly;
+  display:block;
+  width:100%;
+}
+
+
+h1 {
+  font-size: $lg-size;
+}
+
+h2 {
+  font-size: $md-size;
+  font-weight: 500;
+}
+
+p {
+  font-size: $sm-size;
+  font-weight: 400;
+  color:#00010b;
+}

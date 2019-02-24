@@ -1,0 +1,53 @@
+.main-wrapper {
+  width: 100%;
+  padding:0;
+  margin:0;
+
+.job-desc {
+  @media screen and (max-width:767px) {
+    flex-direction: column;
+
+  }
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  :last-child {
+    margin-right: 0 !important;
+  }
+
+  .job-block {
+    @media screen and (max-width:767px) {
+      margin-right: 0;
+      margin-bottom: 1rem;
+
+    }
+    list-style: none;
+    background: #fafafa;
+    outline: 1px solid #a0a4ab;
+    margin-right: 1rem;
+    padding: 5px;
+    box-shadow: 0px 2px 5px 1px #757575;
+    li {
+      padding: 3px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+@media screen and (max-width:767px) {
+  .main-content .container {
+    padding:0;
+    width: 90%;
+    margin:0 auto;
+  }
+}
+
+
+
+
+}
+
