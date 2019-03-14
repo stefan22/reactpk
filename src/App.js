@@ -5,7 +5,6 @@ import Dashboard from './components/pages/Dashboard';
 import JobsList from './components/pages/JobsList';
 import Contact from './components/pages/Contact';
 import ApplicantsList from './components/pages/ApplicantsList';
-
 import './scss/App.scss';
 
 class App extends Component {
@@ -14,7 +13,8 @@ class App extends Component {
 	render() {
     console.log(this);
 		return (
-        <div className='full-container no-padding'>
+
+         <div className='page-wrapper'>
           <MenuNavBar />
           <div className='main-wrapper'>
             <Switch>
