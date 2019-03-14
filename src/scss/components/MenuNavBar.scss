@@ -1,7 +1,8 @@
-.menu-root {
+@import '../base/base';
 
+.menu-root {
   header {
-    background: #1A237E;
+    background: $nav-bg;
     .menu-list {
       display: flex;
       flex-direction: row;
@@ -9,16 +10,17 @@
       justify-content: flex-start;
       h5 {
         margin-right: 20px;
-        font-size: 115%;
+        font-size: $md-size;
         padding: 13px 0;
       }
       a {
-        font-weight: 300;
+        text-decoration: none;
+        font-weight: $font-weight-lt;
         letter-spacing: .25px;
-        color:#d2d2d2;
+        color:$nav-color;
         cursor: pointer;
         &.is-active {
-          color: #fff;
+          color: $white;
         }
       }
     }

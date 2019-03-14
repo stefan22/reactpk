@@ -1,0 +1,33 @@
+@import '../base/base';
+
+.inner-content {
+  margin-bottom: 3rem;
+}//DashContent comp
+
+
+.banner-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  height: 52vh; //temporary
+  .blue-blue-gradient {
+    background:$bluesky-bg;
+    background-blend-mode: hard-light;
+    padding: 2rem 0;
+    .page-banner {
+      padding: 2rem;
+      .ready {
+        font-size:$lg-size;
+        color:$banner-ready;
+        margin:10px 0;
+      }
+      .optimize {
+        font-size: $title-size;
+        color: $banner-header;
+        margin:20px 0;
+      }
+
+    }
+  }
+}
+
