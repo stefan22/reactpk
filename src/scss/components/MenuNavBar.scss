@@ -3,6 +3,13 @@
 .menu-root {
   header {
     background: $nav-bg;
+    button {
+      margin-left: -12px;
+      margin-right: 20px;
+      @media only screen and (max-width:414px) {
+        margin-right: 10px;
+      }
+  }
     .menu-list {
       display: flex;
       flex-direction: row;
@@ -12,6 +19,13 @@
         margin-right: 20px;
         font-size: $md-size;
         padding: 13px 0;
+        @media only screen and (max-width:414px) {
+          margin-right: 15px;
+          font-size: $sm-size;
+        }
+        @media only screen and (max-width:320px) {
+          margin-right:9px;
+        }
       }
       a {
         text-decoration: none;

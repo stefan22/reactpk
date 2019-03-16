@@ -28,7 +28,7 @@ const styles = theme => ({
   },
   canval: {
     textAlign: 'right',
-    width: 310,
+    width: 300,
     lineHeight:1.35,
     padding: '4px 0 0 0',
     color:'#2196F3',

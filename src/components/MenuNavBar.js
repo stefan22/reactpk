@@ -13,11 +13,7 @@ import '../scss/components/MenuNavBar.scss';
 const styles = {
   grow: {
     flexGrow: 1,
-  },
-  menuButton: {
-    marginLeft: -12,
-    marginRight: 20,
-  },
+  }
 };
 
 class MenuNavBar extends Component {
@@ -40,12 +36,12 @@ class MenuNavBar extends Component {
               </Typography>
               <Typography variant="h5" color="inherit" className={classes.grow}>
                 <NavLink to='/jobs' activeClassName='is-active' >
-                  Jobs list
+                  Jobs
                 </NavLink>
               </Typography>
               <Typography variant="h5" color="inherit" className={classes.grow}>
                 <NavLink to='/applicants' activeClassName='is-active' >
-                  Applicants list
+                  Applicants
                 </NavLink>
               </Typography>
               <Typography variant="h5" color="inherit" className={classes.grow}>

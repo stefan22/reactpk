@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import UserItem from '../UserItem';
 import Header from '../Header';
 import '../../scss/components/ApplicantsList.scss';
+import {bounce} from '../animationHelpers';
 
 const API = 'https://jsonplaceholder.typicode.com/users';
 
@@ -18,6 +19,8 @@ class ApplicantsList extends Component {
 
   componentDidMount() {
     this.getUsers();
+    //page,animate,myclass
+    bounce('applicants','bounce animated','main-content');
   }
 
   getUsers = () => {
@@ -37,8 +40,8 @@ class ApplicantsList extends Component {
     return (
       <div className='main-content'>
         <Header
-          title={'Applicants List page'}
-          subtitle={'a subtitle for Applicants list '}
+          title={'Applicants List'}
+          subtitle={'A subtitle for Applicants list '}
         />
 
         <div className='container'>

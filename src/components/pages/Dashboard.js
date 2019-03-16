@@ -6,6 +6,7 @@ import Recruitment from '../Recruitment';
 
 class Dashboard extends Component {
 
+
   render() {
     const title = 'Rec Dashboard';
     const subtitle = 'Here, I Check All my Stats, and decide who goes where and does this or that'

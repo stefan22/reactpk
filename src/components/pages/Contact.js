@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from '../Header';
-import '../../scss/components/JobsList.scss';
 import TextInputField from '../formElements/TextInputField';
 import CheckboxField from '../formElements/CheckboxField';
 import SelectField from '../formElements/SelectField';
@@ -68,7 +67,7 @@ class Contact extends Component {
         />
 
         <div className="container">
-          <h2>Send us something nice</h2>
+          <h2>Get in Touch!</h2>
           <form onSubmit={this.handleFormSubmit}>
             <div>
               <TextInputField handleOnChange={this.handleOnChange}

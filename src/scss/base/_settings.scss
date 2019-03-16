@@ -27,6 +27,7 @@ $font-weight-bold:500;
 //white
 $light-white:#f8f8ff;
 $white:#ffffff;
+$black:#000000;
 //indi
 $indilight: #1f364d;
 $indireg: #0f273d;
@@ -34,14 +35,18 @@ $indidark: #0c2033;
 //blue
 $bluereg: #4997e5;
 $bluedark: #457cb2;
-$bluesky-bg:#e8eaf6;
-$banner-ready: #B71C1C;
-$banner-header: darkblue;
+$bluesky-bg:#4ea7ff;
+
+$banner-ready: $black;
+$darkred:#7f1922;
+$banner-header: $white;
 //page
 $font-color-regular:#212121;
 $page-background:#f4f4f4;
-$nav-bg: #1A237E;
+$nav-bg: #19227f;
 $nav-color: #d2d2d2;
+$green: #227f19;
+$whitelt: #e7e8f2;
 
 @mixin clearfix() {
 	&::after {
@@ -58,3 +63,5 @@ $bghover-color: rgba(0, 0, 0, 0.018);
 
 $box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14),
 	0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+
+

@@ -5,11 +5,10 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import '../scss/components/JobsList.scss';
 
 const styles = theme => ({
   card: {
-    minWidth: 325,
+    minWidth: 322,
     marginTop: 25,
     background:'#110e52',
     border:'1px solid black',
@@ -28,7 +27,7 @@ const styles = theme => ({
   },
   canval: {
     textAlign: 'right',
-    width: 310,
+    width: 290,
     lineHeight:1.35,
     padding: '4px 0 0 0',
     color:'#2196F3',

@@ -2,14 +2,21 @@ import React, { Component } from 'react';
 import Header from '../Header';
 import Jobs from '../../data/jobs';
 import JobsListItem from '../JobListItem';
-import '../../scss/components/JobsList.scss';
+import '../../scss/components/ApplicantsList.scss';
+import {bounce} from '../animationHelpers';
 
 class JobsList extends Component {
+
+  componentDidMount() {
+    //page,animate,myclass
+    bounce('jobs','bounce animated','main-content');
+  }
+
   render() {
     const jobs = Jobs;
     return (
       <div className='main-content'>
-        <Header title={'Jobs List page'} subtitle={'jobs page subtitle'} />
+        <Header title={'Jobs List page'} subtitle={'Jobs page subtitle'} />
         <div className="container">
 
           <h2>My Jobs</h2>

@@ -1,11 +1,14 @@
 import React from 'react';
+import '../scss/components/Header.scss';
 
 const Header = (props) => {
 
   return (
     <div className='header'>
-      <h1 className='text-center border-bottom'>{props.title}</h1>
-      <p className='text-center'>{props.subtitle}</p>
+      <div className='container'>
+        <h1 className='text-center no-margin'>{props.title}</h1>
+        <p className='text-center no-margin'>{props.subtitle}</p>
+      </div>
     </div>
   );
 };

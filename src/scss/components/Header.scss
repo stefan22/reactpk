@@ -1,0 +1,21 @@
+@import '../base/base';
+
+.header {
+  padding: 2rem 0;
+  h1 {
+    margin-bottom: 7px;
+  }
+  p {
+    color:$darkred;
+  }
+  @media only screen and (max-width:411px) {
+    h1 {
+      font-weight: $font-weight-reg;
+    }
+    p {
+      font-size: $sm-size;
+    }
+  }
+}
+
+
