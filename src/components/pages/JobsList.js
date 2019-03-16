@@ -4,6 +4,7 @@ import Jobs from '../../data/jobs';
 import JobsListItem from '../JobListItem';
 import '../../scss/components/ApplicantsList.scss';
 import {bounce} from '../animationHelpers';
+import {jobsPageData} from '../../data/jobsPageData';
 
 class JobsList extends Component {
 
@@ -14,15 +15,16 @@ class JobsList extends Component {
 
   render() {
     const jobs = Jobs;
+    const jd = jobsPageData;
     return (
       <div className='main-content'>
         <Header title={'Jobs List page'} subtitle={'Jobs page subtitle'} />
         <div className="container">
 
-          <h2>My Jobs</h2>
+          <h2>{jd.title}</h2>
           <div className='job-legend'>
             <p className="text-left">
-              By Id, Title, Salary, Location, and Company.
+              {jd.subtitle}
             </p>
           </div>
           <div className='job-desc'>

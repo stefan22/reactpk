@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import {NavLink} from 'react-router-dom';
 import '../scss/components/MenuNavBar.scss';
+import {menuNavData} from '../data/menuNavData';
 
 
 const styles = {
@@ -19,6 +20,7 @@ const styles = {
 class MenuNavBar extends Component {
 
   render() {
+    const nvlk = menuNavData;
     const { classes } = this.props;
 
     return (
@@ -31,22 +33,22 @@ class MenuNavBar extends Component {
             <div className='menu-list'>
               <Typography variant="h5" color="inherit" className={classes.grow}>
                 <NavLink to='/' activeClassName='is-active' exact={true} >
-                  Home
+                  {nvlk.navlink1}
                 </NavLink>
               </Typography>
               <Typography variant="h5" color="inherit" className={classes.grow}>
                 <NavLink to='/jobs' activeClassName='is-active' >
-                  Jobs
+                {nvlk.navlink2}
                 </NavLink>
               </Typography>
               <Typography variant="h5" color="inherit" className={classes.grow}>
                 <NavLink to='/applicants' activeClassName='is-active' >
-                  Applicants
+                {nvlk.navlink3}
                 </NavLink>
               </Typography>
               <Typography variant="h5" color="inherit" className={classes.grow}>
                 <NavLink to='/contact' activeClassName='is-active' >
-                  Contact
+                {nvlk.navlink4}
                 </NavLink>
               </Typography>
             </div>

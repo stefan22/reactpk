@@ -2,7 +2,6 @@ import React from 'react';
 import '../scss/components/Header.scss';
 
 const Header = (props) => {
-
   return (
     <div className='header'>
       <div className='container'>

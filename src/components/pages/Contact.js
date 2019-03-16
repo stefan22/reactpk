@@ -3,6 +3,7 @@ import Header from '../Header';
 import TextInputField from '../formElements/TextInputField';
 import CheckboxField from '../formElements/CheckboxField';
 import SelectField from '../formElements/SelectField';
+import {applicantsPageData} from '../../data/contactPageData';
 
 
 class Contact extends Component {
@@ -13,20 +14,10 @@ class Contact extends Component {
   }
 
   componentWillMount() {
-    const countryOptions =[
-      {name: 'select-a-country', value:''},
-      {name: 'Canada', value:'Canada'},
-      {name: 'Japan', value:'Japan'},
-      {name: 'Britain', value:'Britain'},
-      {name: 'Spain', value:'Spain'},
-      {name: 'Colombia', value:'Colombia'}
-    ];
-
+    const co = applicantsPageData.countryOptions;
     this.setState({
-      options: countryOptions,
+      options: co,
     });
-
-
   }
 
   handleOnChange(obj) {
@@ -57,8 +48,7 @@ class Contact extends Component {
   }
 
   render() {
-
-
+    const cd = applicantsPageData;
     return (
       <div className='main-content'>
         <Header
@@ -67,7 +57,7 @@ class Contact extends Component {
         />
 
         <div className="container">
-          <h2>Get in Touch!</h2>
+          <h2>{cd.title}</h2>
           <form onSubmit={this.handleFormSubmit}>
             <div>
               <TextInputField handleOnChange={this.handleOnChange}
@@ -81,26 +71,17 @@ class Contact extends Component {
 
             <SelectField handleOnChange={this.handleOnChange}
               name='country'
-              label='Select country'
+              label= {cd.country}
               options={this.state.options}
             />
 
             <CheckboxField handleOnChange={this.handleOnChange}
               name='checkbox'
-              label='Check this box, if you want us to blast you free of charge, and for an entire week non-stop with some amazing spam email.'
-
-
+              label= {cd.confirm}
             />
 
-            <button type='submit'>Submit</button>
+            <button type='submit'>{cd.button}</button>
           </form>
-
-
-
-
-
-
-
         </div>
       </div>
 

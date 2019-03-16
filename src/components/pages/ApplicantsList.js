@@ -3,6 +3,7 @@ import UserItem from '../UserItem';
 import Header from '../Header';
 import '../../scss/components/ApplicantsList.scss';
 import {bounce} from '../animationHelpers';
+import {applicantsPageData} from '../../data/applicantsPageData';
 
 const API = 'https://jsonplaceholder.typicode.com/users';
 
@@ -34,8 +35,8 @@ class ApplicantsList extends Component {
   }
 
   render() {
-    console.log(this);
     let {applicants} =  this.state;
+    const ad = applicantsPageData;
 
     return (
       <div className='main-content'>
@@ -45,10 +46,10 @@ class ApplicantsList extends Component {
         />
 
         <div className='container'>
-          <h2>My Applicants</h2>
+          <h2>{ad.title}</h2>
           <div className='job-legend'>
             <p className="text-left">
-              By Id, Name, Street, Phone, Email, Website, City, Business, and catchPhrase
+              {ad.subtitle}
             </p>
           </div>
           <div className='applicants'>
