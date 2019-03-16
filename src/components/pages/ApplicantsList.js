@@ -41,8 +41,8 @@ class ApplicantsList extends Component {
     return (
       <div className='main-content'>
         <Header
-          title={'Applicants List'}
-          subtitle={'A subtitle for Applicants list '}
+          title={ad.pageTitle}
+          subtitle={ad.pageSubtitle}
         />
 
         <div className='container'>

@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 import Header from '../Header';
 import DashContent from '../DashContent';
 import Recruitment from '../Recruitment';
+import {dashboardContent} from '../../data/dashboardData';
 
 
 class Dashboard extends Component {
 
-
   render() {
-    const title = 'Rec Dashboard';
-    const subtitle = 'Here, I Check All my Stats, and decide who goes where and does this or that'
-    console.log(this);
+    const dc = dashboardContent;
+
     return (
       <div className='main-content'>
-        <Header title={title} subtitle={subtitle} />
+        <Header title={dc.pageTitle} subtitle={dc.pageSubtitle} />
 
         <DashContent />
 

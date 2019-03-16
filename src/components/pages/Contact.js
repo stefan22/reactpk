@@ -52,8 +52,8 @@ class Contact extends Component {
     return (
       <div className='main-content'>
         <Header
-          title={'Contact us page'}
-          subtitle={'Helping you land your dream job!'}
+          title={cd.pageTitle}
+          subtitle={cd.pageSubtitle}
         />
 
         <div className="container">

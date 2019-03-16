@@ -1,4 +1,8 @@
 export const applicantsPageData = {
+  pageTitle:
+  'Contact us page',
+  pageSubtitle:
+  'Helping you land your dream job!',
   title:
   'Get in Touch!',
   confirm:

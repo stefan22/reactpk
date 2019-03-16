@@ -1,4 +1,8 @@
 export const dashboardContent = {
+  pageTitle:
+  'Rec Dashboard',
+  pageSubtitle:
+  'Here, I Check All my Stats, and decide who goes where and does this or that',
   title:
   'Rec Stats',
   p1:

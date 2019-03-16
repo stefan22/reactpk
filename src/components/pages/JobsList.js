@@ -18,7 +18,7 @@ class JobsList extends Component {
     const jd = jobsPageData;
     return (
       <div className='main-content'>
-        <Header title={'Jobs List page'} subtitle={'Jobs page subtitle'} />
+        <Header title={jd.pageTitle} subtitle={jd.pageSubtitle} />
         <div className="container">
 
           <h2>{jd.title}</h2>
