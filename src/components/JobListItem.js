@@ -78,7 +78,7 @@ class JobsListItem extends Component {
         </CardContent>
         <CardActions>
           <Button variant='outlined' color='primary' className={classes.button} size="small">New Opening</Button>
-          <Button variant='span' color='secondary' className={classes.button} size="small">Position filled</Button>
+          <Button variant='outlined' color='secondary' className={classes.button} size="small">Position filled</Button>
         </CardActions>
       </Card>
     );

@@ -50,7 +50,7 @@ class UserItem extends Component {
 
   render() {
     const { classes } = this.props;
-    console.log(this);
+    //console.log(this);
     let {
       id,name,email,phone,website,street,city,business,catchPhrase
     } = this.props;
@@ -59,7 +59,6 @@ class UserItem extends Component {
 
       <Card className={classes.card}>
         <CardContent>
-
           <Typography className={classes.canval} variant="h5" component="p">
           <span className={classes.cankey}>Id:</span>{id}
           </Typography>

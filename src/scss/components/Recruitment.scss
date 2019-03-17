@@ -3,6 +3,7 @@
 .inner-content {
   margin-bottom: 3rem;
   min-height: 450px;
+
 }//DashContent comp
 
 
@@ -16,6 +17,7 @@
     padding: 2rem 0;
     .page-banner {
       padding: 2rem;
+      cursor: pointer;
       .ready {
         font-size:$lg-size;
         color:$banner-ready;

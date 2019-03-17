@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 import Header from '../Header';
-import Jobs from '../../data/jobs';
-import JobsListItem from '../JobListItem';
+import Items from '../../data/jobs';
+import ListjobsTest from '../ListjobsTest';
 import '../../scss/components/ApplicantsList.scss';
-import {bounce} from '../animationHelpers';
 import {jobsPageData} from '../../data/jobsPageData';
+import JobSingleTest from '../JobSingleTest';
 
-class JobsList extends Component {
+class Testpage extends Component {
 
   componentDidMount() {
-    //page,animate,myclass
-    bounce('jobs','bounce animated','main-content');
+
   }
 
   render() {
-    const jobs = Jobs;
+    const items = Items;
     const jd = jobsPageData;
     return (
       <div className='main-content'>
@@ -28,16 +27,8 @@ class JobsList extends Component {
             </p>
           </div>
           <div className='job-desc'>
-          {
-            jobs.map((itm,index) => {
-              return (
-                <JobsListItem
-                key={index}
-                {...itm}
-                />
 
-              )})
-          }
+            <ListjobsTest items={items} itemElement={JobSingleTest} />
 
           </div>
         </div>
@@ -49,4 +40,4 @@ class JobsList extends Component {
 }
 
 
-export default JobsList;
+export default Testpage;

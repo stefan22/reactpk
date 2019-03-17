@@ -5,7 +5,6 @@ import CheckboxField from '../formElements/CheckboxField';
 import SelectField from '../formElements/SelectField';
 import {applicantsPageData} from '../../data/contactPageData';
 
-
 class Contact extends Component {
   constructor(props) {
     super(props);

@@ -51,6 +51,11 @@ class MenuNavBar extends Component {
                 {nvlk.navlink4}
                 </NavLink>
               </Typography>
+              <Typography variant="h5" color="inherit" className={classes.grow}>
+                <NavLink to='/Testpage' activeClassName='is-active' >
+                testPage
+                </NavLink>
+              </Typography>
             </div>
           </Toolbar>
         </AppBar>

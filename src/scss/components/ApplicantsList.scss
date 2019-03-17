@@ -5,8 +5,25 @@
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: space-between;
+
   :last-child {
     margin-right: 0 !important;
+  }
+  p {
+    color:$jobdesc-val;
+    font-size: $xs-size;
+    span {
+      color:$jobdesc-key
+    }
+  }
+  button {
+    color:$button-red;
+    border:1px solid $button-border;
+    &:hover {
+      border:1px solid $button-hover-color;
+      color: $button-hover-color;
+      background:$button-hover-bg;
+    }
   }
 }
 

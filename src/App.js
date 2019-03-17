@@ -5,13 +5,13 @@ import Dashboard from './components/pages/Dashboard';
 import JobsList from './components/pages/JobsList';
 import Contact from './components/pages/Contact';
 import ApplicantsList from './components/pages/ApplicantsList';
+import Testpage from './components/pages/Testpage';
 import './scss/App.scss';
 
 class App extends Component {
 
-
 	render() {
-    console.log(this);
+    //console.log(this);
 		return (
 
          <div className='page-wrapper'>
@@ -22,6 +22,7 @@ class App extends Component {
               <Route path="/jobs" component={JobsList} />
               <Route path="/applicants" component={ApplicantsList} />
               <Route path="/contact" component={Contact} />
+              <Route path="/testpage" component={Testpage} />
             </Switch>
           </div>
         </div>

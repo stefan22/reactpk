@@ -1,24 +1,20 @@
 import React from 'react';
 
-
 class SelectField extends React.Component {
   constructor(props) {
     super(props);
     this.handleOnChangeSelect = this.handleOnChangeSelect.bind(this);
-
   }
 
   handleOnChangeSelect(e) {
-
-   let obj = {};
-   obj.name = e.target.value;
-   obj.pass = 'options';
-
+    let obj = {};
+    obj.name = e.target.value;
+    obj.pass = 'options';
     this.props.handleOnChange(obj);
   }
 
   render() {
-    console.log(this);
+    //console.log(this);
 
   const { label, options, name, value } = this.props;
     return (

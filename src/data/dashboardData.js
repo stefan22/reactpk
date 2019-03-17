@@ -1,8 +1,8 @@
 export const dashboardContent = {
   pageTitle:
-  'Rec Dashboard',
+  'Rec∫entral®',
   pageSubtitle:
-  'Here, I Check All my Stats, and decide who goes where and does this or that',
+  'Easily manage all of your clients/candidates with Recruitment Central.',
   title:
   'Rec Stats',
   p1:
