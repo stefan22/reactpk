@@ -8,11 +8,11 @@ import {dashboardContent} from '../../data/dashboardData';
 class Dashboard extends Component {
 
   render() {
-    const dc = dashboardContent;
+    const {pageTitle,pageSubtitle} = dashboardContent;
 
     return (
       <div className='main-content'>
-        <Header title={dc.pageTitle} subtitle={dc.pageSubtitle} />
+        <Header title={pageTitle} subtitle={pageSubtitle} />
 
         <DashContent />
 

@@ -20,7 +20,7 @@ const styles = {
 class MenuNavBar extends Component {
 
   render() {
-    const nvlk = menuNavData;
+    const {navlink1,navlink2,navlink3,navlink4} = menuNavData;
     const { classes } = this.props;
 
     return (
@@ -33,27 +33,27 @@ class MenuNavBar extends Component {
             <div className='menu-list'>
               <Typography variant="h5" color="inherit" className={classes.grow}>
                 <NavLink to='/' activeClassName='is-active' exact={true} >
-                  {nvlk.navlink1}
+                  {navlink1}
                 </NavLink>
               </Typography>
               <Typography variant="h5" color="inherit" className={classes.grow}>
                 <NavLink to='/jobs' activeClassName='is-active' >
-                {nvlk.navlink2}
+                  {navlink2}
                 </NavLink>
               </Typography>
               <Typography variant="h5" color="inherit" className={classes.grow}>
                 <NavLink to='/applicants' activeClassName='is-active' >
-                {nvlk.navlink3}
+                  {navlink3}
                 </NavLink>
               </Typography>
               <Typography variant="h5" color="inherit" className={classes.grow}>
                 <NavLink to='/contact' activeClassName='is-active' >
-                {nvlk.navlink4}
+                  {navlink4}
                 </NavLink>
               </Typography>
               <Typography variant="h5" color="inherit" className={classes.grow}>
                 <NavLink to='/Testpage' activeClassName='is-active' >
-                testPage
+                  testPage
                 </NavLink>
               </Typography>
             </div>
