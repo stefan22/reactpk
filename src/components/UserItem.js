@@ -49,14 +49,10 @@ const styles = theme => ({
 class UserItem extends Component {
 
   render() {
-    const { classes } = this.props;
-    //console.log(this);
-    let {
-      id,name,email,phone,website,street,city,business,catchPhrase
-    } = this.props;
-
+    const {classes} = this.props;
+    const {id,name,email,phone,website,
+      street,city,business,catchPhrase} = this.props;
     return (
-
       <Card className={classes.card}>
         <CardContent>
           <Typography className={classes.canval} variant="h5" component="p">

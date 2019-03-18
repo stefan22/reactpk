@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
 import Header from '../Header';
 import Items from '../../data/jobs';
-import ListjobsTest from '../ListjobsTest';
 import '../../scss/components/ApplicantsList.scss';
 import {jobsPageData} from '../../data/jobsPageData';
-import JobSingleTest from '../JobSingleTest';
+
+
 
 class Testpage extends Component {
 
-  componentDidMount() {
-
-  }
-
   render() {
     const items = Items;
+    console.log(this);
     const jd = jobsPageData;
     return (
       <div className='main-content'>
@@ -28,7 +25,7 @@ class Testpage extends Component {
           </div>
           <div className='job-desc'>
 
-            <ListjobsTest items={items} itemElement={JobSingleTest} />
+            list removed
 
           </div>
         </div>
