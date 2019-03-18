@@ -1,6 +1,7 @@
 @import '../base/base';
+//.applicants & .job-desc
 
-.applicants,.job-desc {
+.multilist-desc {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;

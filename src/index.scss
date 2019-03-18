@@ -311,3 +311,33 @@ form {
 @mixin blueGradient {
   background:linear-gradient(90deg, #89f7fe 0%,#66a6ff 100% );
 }
+
+
+@mixin animateUnderline($ani-color,$ani-width,$ani-left) {
+  position: relative;
+  color: $ani-color;
+  text-decoration: none;
+  &:hover {
+    color:$ani-color;
+    cursor: pointer;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: $ani-width;
+    height: 2px;
+    bottom:-1px;
+    left: $ani-left;
+    background-color: $ani-color;
+    visibility: hidden;
+    -webkit-transform:scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .25s ease-in-out 0s;
+    transition: all .25s ease-in-out 0s;
+  }
+  &:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}

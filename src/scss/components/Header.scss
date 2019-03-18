@@ -1,9 +1,13 @@
-@import '../base/base';
+//@import '../base/base';
+@import '../../index.scss';
 
 .header {
   padding: 2rem 0;
   h1 {
     margin-bottom: 7px;
+
+
+
   }
   p {
     color:$darkred;
