@@ -1,11 +1,10 @@
 (() => {
 
     processInput = {
-        areNums: this.areNums || [], //all numbers
-        myNums: this.myNums || [], //odds or evens
-
         init(oddsEvens) {
             this.oddsEvens = oddsEvens; //selection
+            this.areNums = this.areNums || []; //all Numbers
+            this.myNums = [];  //odds/evens
             this.checkIfNumber()
         },
 
