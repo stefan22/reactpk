@@ -1,6 +1,6 @@
 export const dashboardContent = {
   pageTitle:
-  'Rec∫entral®',
+  'Recruit Central Station',
   pageSubtitle:
   'Easily manage all of your clients/candidates with Recruitment Central.',
   title:
