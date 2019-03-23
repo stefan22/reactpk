@@ -28,7 +28,10 @@ The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
 
-### `Other`
+### `ongoing`
+
+<kbd>Jobs page</kbd>
+![](src/images/jobspage.png)
 
 
 
