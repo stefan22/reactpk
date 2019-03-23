@@ -2,15 +2,133 @@
 @import '../../index.scss';
 
 .header {
-  padding: 2rem 0;
+  &.dashboard {
+    @include backgroundImage('mobilecombo');
+    background-color: $white;
+    height: auto;
+    width: 100%;
+    background-position: center right;
+    background-repeat: no-repeat;
+    min-height: calc(75vh - 64px);
+    .dasheading {
+      padding-top: 20vh;
+      padding-bottom: 20vh;
+      width:50%;
+      h1 {
+        text-align: left;
+        font-size: 270%;
+        color: $black;
+
+
+      }
+      p {
+        text-align: left;
+        font-size: 120%;
+        color:$bluecopy;
+      }
+    }
+    @media screen and (max-width:1024px) {
+      background-position: top right;
+      h1 {
+        font-size: 250%;
+      }
+      p {
+        font-size: 120%;
+      }
+
+    }
+  }
+  &.jobs {
+    @include backgroundImage('shopbanner');
+    @media screen and (max-width:1024px) {
+      background-position: top center;
+      h1 {
+        font-size: 250%;
+      }
+    }
+    h1 {
+      color: $white;
+      text-shadow: 1px 3px 2px black;
+
+    }
+    p {
+      text-shadow: 0 2px 1px black;
+      @media screen and (max-width:1024px) {
+        p {
+          font-size: 120%;
+        }
+
+      }
+    }
+  }
+  &.applicants {
+    @include backgroundImage('guybanner');
+    @media screen and (max-width:1024px) {
+      background-position: top center;
+      h1 {
+        font-size: 250%;
+      }
+      p {
+        font-size: 120%;
+      }
+
+    }
+  }
+  &.contact {
+    @include backgroundImage('ipadbg');
+    @media screen and (max-width:1024px) {
+
+      h1 {
+        font-size: 250%;
+      }
+      p {
+        font-size: 120%;
+      }
+
+    }
+    min-height: calc(90vh - 64px);
+
+  }
+  background-color: $white;
+  margin-top:64px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  border-top: 2px solid #bebec3;
+  mix-blend-mode: soft-light;
+  border-bottom: 3px solid #e2e2e2;
+  min-height: calc(40vh - 64px);
+  padding-top: 6.37vh;
+  padding-bottom: 6.37vh;
+  width:100%;
+  @media screen and (max-width:1024px) {
+    min-height: calc(20vh - 64px);
+
+  }
+
   h1 {
-    margin-bottom: 7px;
+    //font-size: 400%;
+    @media screen and (max-width:1024px) {
+      background-position: center center;
+      h1 {
+        font-size: 250%;
+      }
+
+    }
 
 
 
   }
   p {
     color:$darkred;
+    font-size: 150%;
+    @media screen and (max-width:1024px) {
+      background-position: center center;
+      p {
+        font-size: 120%;
+      }
+
+    }
   }
   @media only screen and (max-width:411px) {
     h1 {

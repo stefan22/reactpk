@@ -38,6 +38,7 @@ body {
 
 .main-content {
   margin:0;
+  margin-bottom: 3rem;
 }
 
 
@@ -340,4 +341,11 @@ form {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
   }
+}
+
+
+
+@mixin backgroundImage($name) {
+  $url: '../../images/#{$name}.jpg';
+  background: url($url);
 }
