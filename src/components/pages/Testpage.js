@@ -17,15 +17,16 @@ class Testpage extends Component {
         <Header title={jd.pageTitle} subtitle={jd.pageSubtitle} />
         <div className="container">
 
-          <h2>{jd.title}</h2>
+          <h2>Far from done...</h2>
           <div className='job-legend'>
             <p className="text-left">
-              {jd.subtitle}
+             Should probably finish the site theme first???
             </p>
           </div>
           <div className='job-desc'>
 
-            list removed
+            settle on colors, home page dummy content, footer,
+            media queries, sass
 
           </div>
         </div>

@@ -13,7 +13,6 @@ class Dashboard extends Component {
     return (
       <div className='main-content'>
         <Header title={pageTitle} subtitle={pageSubtitle} />
-
         <DashContent />
 
         <Recruitment />

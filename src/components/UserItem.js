@@ -49,9 +49,10 @@ const styles = theme => ({
 class UserItem extends Component {
 
   render() {
+    console.log(this);
     const {classes} = this.props;
     const {id,name,email,phone,website,
-      street,city,business,catchPhrase} = this.props;
+      street,address,company,catchPhrase} = this.props;
     return (
       <Card className={classes.card}>
         <CardContent>
@@ -80,15 +81,15 @@ class UserItem extends Component {
           </Typography>
 
           <Typography className={classes.canval}  variant="h6" component="p">
-          <span className={classes.cankey}>City:</span> {city}
+          <span className={classes.cankey}>City:</span> {address.city}
           </Typography>
 
           <Typography className={classes.canval}  variant="h6" component="p">
-          <span className={classes.cankey}>Business:</span> {business}
+          <span className={classes.cankey}>Business:</span> {company.name}
           </Typography>
 
           <Typography className={classes.canval}  variant="h6" component="p">
-          <span className={classes.cankey}>CatchPhrase:</span>{catchPhrase}
+          <span className={classes.cankey}>CatchPhrase:</span>{company.catchPhrase}
           </Typography>
 
         </CardContent>
